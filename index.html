@@ -6,15 +6,24 @@
     <meta name="description" content="Freedom Moving: Family-owned moving and disposal services in Southampton, PA. Junk pickup, out-of-state moves, and more.">
     <title>Freedom Moving - Family-Owned Moving & Disposal</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="container">
-            <p class="tagline">Family-Owned & Operated for 10 Years</p>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="/images/freedomlogowebsite.png" alt="Freedom Moving Logo" class="logo-image">
+                </a>
+            </div>
+            <nav class="navbar">
+                <button class="hamburger" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -22,35 +31,80 @@
     </header>
 
     <section class="hero">
+        <img src="/images/ban (1).png" alt="Freedom Moving Team at Work" class="hero-banner">
+        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h2>Moving • Storage • Packing</h2>
-            <p>Family-owned for 10 years, serving Bucks County and beyond.</p>
-            <a href="contact.html" class="btn">Get a Quote Now</a>
+            <div class="hero-content-box">
+                <h1>Stress-Free Moving & Disposal</h1>
+                <p>Family-owned for over a decade, serving Bucks County and beyond with reliable moving and junk removal services.</p>
+                <div class="hero-buttons">
+                    <a href="contact.html" class="btn btn-primary">Get a Free Quote</a>
+                    <a href="contact.html" class="btn btn-secondary">Call Now</a>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="awards">
-        <div class="container">
-            <h2>Our Awards</h2>
-            <img src="images/newbest.png" alt="Freedom Moving Awards" class="awards-image">
-        </div>
-    </section>
-
-    <section class="services">
+    <section class="services" id="services">
         <div class="container">
             <h2>Our Services</h2>
+            <p class="section-subtitle">Comprehensive moving and disposal solutions tailored to your needs.</p>
             <div class="services-grid">
-                <div class="service-card"><span class="service-icon">📦</span> Appliance Disposal</div>
-                <div class="service-card"><span class="service-icon">🛋️</span> Furniture Disposal</div>
-                <div class="service-card"><span class="service-icon">🗑️</span> Junk Pickup</div>
-                <div class="service-card"><span class="service-icon">🛏️</span> Mattress Disposal</div>
-                <div class="service-card"><span class="service-icon">🚚</span> Out-of-State Moving</div>
-                <div class="service-card"><span class="service-icon">🗑️</span> Trash Disposal</div>
-                <div class="service-card"><span class="service-icon">🎄</span> Christmas Tree Disposal</div>
-                <div class="service-card"><span class="service-icon">🏠</span> Property Cleanout</div>
-                <div class="service-card"><span class="service-icon">🌳</span> Landscaping Waste Disposal</div>
-                <div class="service-card"><span class="service-icon">🚛</span> In-State Moving</div>
-                <div class="service-card"><span class="service-icon">🌪️</span> Storm Debris Disposal</div>
+                <div class="service-card" role="article">
+                    <span class="service-icon" aria-hidden="true">📦</span>
+                    <h3>Appliance Disposal</h3>
+                    <p>Safe and eco-friendly removal of old appliances like refrigerators, washers, and dryers.</p>
+                </div>
+                <div class="service-card" role="article">
+                    <span class="service-icon" aria-hidden="true">🛋️</span>
+                    <h3>Furniture Disposal</h3>
+                    <p>Hassle-free removal of unwanted furniture, including sofas, tables, and cabinets.</p>
+                </div>
+                <div class="service-card" role="article">
+                    <span class="service-icon" aria-hidden="true">🗑️</span>
+                    <h3>Junk Pickup</h3>
+                    <p>Quick and efficient pickup of miscellaneous junk from your home or business.</p>
+                </div>
+                <div class="service-card" role="article">
+                    <span class="service-icon" aria-hidden="true">🛏️</span>
+                    <h3>Mattress Disposal</h3>
+                    <p>Responsible disposal of old mattresses with eco-conscious recycling options.</p>
+                </div>
+                <div class="service-card" role="article">
+                    <span class="service-icon" aria-hidden="true">🚚</span>
+                    <h3>Out-of-State Moving</h3>
+                    <p>Reliable long-distance moving services to get you settled in your new home.</p>
+                </div>
+                <div class="service-card" role="article">
+                    <span class="service-icon" aria-hidden="true">🗑️</span>
+                    <h3>Trash Disposal</h3>
+                    <p>Convenient removal of household or commercial trash with flexible scheduling.</p>
+                </div>
+                <div class="service-card" role="article">
+                    <span class="service-icon" aria-hidden="true">🎄</span>
+                    <h3>Christmas Tree Disposal</h3>
+                    <p>Seasonal pickup and disposal of Christmas trees to keep your space tidy.</p>
+                </div>
+                <div class="service-card" role="article">
+                    <span class="service-icon" aria-hidden="true">🏠</span>
+                    <h3>Property Cleanout</h3>
+                    <p>Full cleanout services for homes, garages, or estates, leaving spaces spotless.</p>
+                </div>
+                <div class="service-card" role="article">
+                    <span class="service-icon" aria-hidden="true">🌳</span>
+                    <h3>Landscaping Waste Disposal</h3>
+                    <p>Removal of yard debris, branches, and landscaping waste for a clean outdoor space.</p>
+                </div>
+                <div class="service-card" role="article">
+                    <span class="service-icon" aria-hidden="true">🚛</span>
+                    <h3>In-State Moving</h3>
+                    <p>Efficient local moving services within Pennsylvania, tailored to your needs.</p>
+                </div>
+                <div class="service-card" role="article">
+                    <span class="service-icon" aria-hidden="true">🌪️</span>
+                    <h3>Storm Debris Disposal</h3>
+                    <p>Fast cleanup of storm-related debris to restore your property quickly.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -61,7 +115,7 @@
             <div class="testimonials-grid">
                 <div class="testimonial-card">
                     <span class="quote-icon">“</span>
-                    <p>Randy and his team made our move from Philadelphia to a storage unit in NJ stress-free. They carefully wrapped and packed our items, treating them with great care.</p>
+                    <p>Freedom Movers were professional, personable and very accommodating. We had several requests for rearranging furniture, and they did exactly what we asked them to do, all in a timely and efficient manner. I would definitely recommend using them for any size job that you have.</p>
                     <p>— 5-Star Review</p>
                 </div>
                 <div class="testimonial-card">
@@ -71,7 +125,7 @@
                 </div>
                 <div class="testimonial-card">
                     <span class="quote-icon">“</span>
-                    <p>Randy, Christina, and their team were professional and responsive. They packed fragile items carefully and even handled mattress disposal for us.</p>
+                    <p>Best moving company. The owners are so kind and so is their crew. The most down to earth people that you will ever meet. Very kind, caring, and always made sure they were taking care of your furniture, boxes, etc! They make moving (which is boring) an enjoyable time. Highly recommend!!</p>
                     <p>— 5-Star Review</p>
                 </div>
             </div>
@@ -83,10 +137,10 @@
         <div class="container">
             <h2>Gallery</h2>
             <div class="gallery-grid">
-                <img src="images/gallery1.jpg" alt="Moving Truck">
-                <img src="images/gallery2.jpg" alt="Junk Pickup">
-                <img src="images/gallery3.jpg" alt="Team at Work">
-                <img src="images/gallery4.jpg" alt="Property Cleanout">
+                <img src="/images/341141903_2976706265971171_8674686192580541952_n.jpg" alt="Moving Truck">
+                <img src="/images/480262086_1161991459271113_4433872694869161313_n.jpg" alt="Junk Pickup">
+                <img src="/images/92243603_1476227859219519_3122360229698732032_n.jpg" alt="Team at Work">
+                <img src="/images/Screenshot 2025-05-19 225540.png" alt="Property Cleanout">
             </div>
         </div>
     </section>
@@ -98,5 +152,16 @@
             <p>© 2025 Freedom Moving. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        // Hamburger menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('open');
+        });
+    </script>
 </body>
 </html>

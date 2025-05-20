@@ -3,20 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact Freedom Moving for moving and disposal services in Southampton, PA. Get a free quote today.">
+    <meta name="description" content="Contact Freedom Moving for moving and disposal services in Southampton, PA. Reach out for a free quote.">
     <title>Contact - Freedom Moving</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Freedom Moving</h1>
-            <p class="tagline">Family-Owned & Operated for 10 Years</p>
-            <nav>
-                <ul>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="/images/freedomlogowebsite.png" alt="Freedom Moving Logo" class="logo-image">
+                </a>
+            </div>
+            <nav class="navbar">
+                <button class="hamburger" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -24,19 +32,22 @@
 
     <section class="contact">
         <div class="container">
-            <h2>Get a Free Quote</h2>
-            <p>Call us at <a href="tel:2674149751">267-414-9751</a> or <a href="tel:2154318918">215-431-8918</a></p>
-            <form action="https://formspree.io/f/your-endpoint" method="POST">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-                <label for="phone">Phone</label>
-                <input type="tel" id="phone" name="phone">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit" class="btn">Submit</button>
-            </form>
+            <h2>Contact Freedom Moving</h2>
+            <p class="contact-subtitle">Reach out today for a free quote or to discuss your moving and disposal needs.</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span class="contact-icon">📞</span>
+                    <a href="tel:2674149751">267-414-9751</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">📞</span>
+                    <a href="tel:2154318918">215-431-8918</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">✉️</span>
+                    <a href="mailto:freedommoving1@outlook.com">freedommoving1@outlook.com</a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -47,5 +58,16 @@
             <p>© 2025 Freedom Moving. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        // Hamburger menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('open');
+        });
+    </script>
 </body>
 </html>
